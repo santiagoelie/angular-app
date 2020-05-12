@@ -15,7 +15,7 @@ import { GitSearchService } from './git-search.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [GitSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
