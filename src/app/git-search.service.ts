@@ -17,6 +17,8 @@ export class GitSearchService {
       let promise = new Promise((resolve, reject) => {
           if (this.cachedValues[query]) {
               resolve(this.cachedValues[query])
+          } else {
+              resolve("Placeholder");
           }
       })
       return promise;
