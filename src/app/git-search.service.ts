@@ -3,6 +3,7 @@ import { GitSearch } from './git-search'
 import { promise } from 'protractor';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+// import 'rxjs/add/operator/toPromise'; -> this one is deprecated not available anymore
 
 @Injectable({
   providedIn: 'root'
