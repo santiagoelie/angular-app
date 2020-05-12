@@ -20,7 +20,7 @@ export class GitSearchService {
           if (this.cachedValues[query]) {
               resolve(this.cachedValues[query])
           } else {
-              resolve("Placeholder");
+              this.http.get('https://api.github.com/search/repositories?q=' + query)
           }
       })
       return promise;
