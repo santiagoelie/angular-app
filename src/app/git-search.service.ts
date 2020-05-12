@@ -5,6 +5,10 @@ import { GitSearch } from './git-search'
   providedIn: 'root'
 })
 export class GitSearchService {
-
-  constructor() { }
+    cachedValues: Array<{
+          [query: string]: GitSearch
+    }> = [];
+  constructor() {
+    
+   }
 }
