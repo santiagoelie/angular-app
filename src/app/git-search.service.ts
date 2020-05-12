@@ -9,6 +9,10 @@ export class GitSearchService {
           [query: string]: GitSearch
     }> = [];
   constructor() {
-    
+
+   }
+
+   gitSearch = (query: string) => {
+     
    }
 }
