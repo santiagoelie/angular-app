@@ -14,7 +14,7 @@ export class GitSearchService {
    }
 
    gitSearch = (query: string) => {
-      let promose = new Promise((resolve, reject) => {
+      let promise = new Promise((resolve, reject) => {
 
       })
       return promise;
