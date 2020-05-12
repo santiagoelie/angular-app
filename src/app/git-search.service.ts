@@ -21,6 +21,7 @@ export class GitSearchService {
               resolve(this.cachedValues[query])
           } else {
               this.http.get('https://api.github.com/search/repositories?q=' + query)
+              .toPromise()
           }
       })
       return promise;
