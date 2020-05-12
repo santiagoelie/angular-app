@@ -22,6 +22,11 @@ export class GitSearchService {
           } else {
               this.http.get('https://api.github.com/search/repositories?q=' + query)
               .toPromise()
+              .then( (response) => {
+                  resolve(response)  
+              }, (error) => {
+                  reject(error);
+              })
           }
       })
       return promise;
