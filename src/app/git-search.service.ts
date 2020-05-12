@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { GitSearch } from './git-search'
+import { promise } from 'protractor';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,9 @@ export class GitSearchService {
    }
 
    gitSearch = (query: string) => {
-     
+      let promose = new Promise((resolve, reject) => {
+
+      })
+      return promise;
    }
 }
