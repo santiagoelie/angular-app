@@ -1,6 +1,6 @@
 export interface GitSearch {
     "total_count": number,
-    "incomplete_results": false,
+    "incomplete_results": boolean,
     "items": [
       {
         "id": 14098069,
