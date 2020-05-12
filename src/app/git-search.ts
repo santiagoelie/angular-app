@@ -1,7 +1,7 @@
 export interface GitSearch {
     "total_count": number,
     "incomplete_results": boolean,
-    "items": [
+    "items": Array<
       {
         "id": 14098069,
         "node_id": "MDEwOlJlcG9zaXRvcnkxNDA5ODA2OQ==",
@@ -103,5 +103,5 @@ export interface GitSearch {
         "default_branch": "master",
         "score": 1.0
       }
-    ]
+    >
 }
