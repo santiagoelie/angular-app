@@ -11,8 +11,8 @@ export class GitSearchService {
     cachedValues: Array<{
           [query: string]: GitSearch
     }> = [];
-  constructor() {
-
+  constructor(private http: HttpClient) {
+    
    }
 
    gitSearch = (query: string) => {
