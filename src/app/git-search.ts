@@ -1,5 +1,5 @@
 export interface GitSearch {
-    "total_count": 22121,
+    "total_count": number,
     "incomplete_results": false,
     "items": [
       {
