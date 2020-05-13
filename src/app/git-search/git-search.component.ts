@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GitSearchService } from '../git-search.service'
+import { GitSearch } from '../git-search'
 
 @Component({
   selector: 'app-git-search',
