@@ -15,7 +15,7 @@ export class GitSearchComponent implements OnInit {
     // change the 'angular' value to '&&&&&' to check the error
     this.GitSearchService.gitSearch('angular').then( (response) => {
       // alert("Total Libraries Found:" + response.total_count);
-      this.searchResults = results;
+      this.searchResults = response;
     }, (error) => {
       alert("Error: " + error.statusText)
     })
@@ -24,7 +24,7 @@ export class GitSearchComponent implements OnInit {
   gitSearch = (query: string) => {
     // Let's copy the method from the ngOnInit() function, and change 'angular' to query
     this.GitSearchService.gitSearch(query).then((response) => {
-      this.searchResults = results;
+      this.searchResults = response;
     }, (error) => {
       alert("Error: " + error.statusText)
     })
