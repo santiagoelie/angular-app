@@ -21,4 +21,8 @@ export class GitSearchComponent implements OnInit {
     })
   }
 
+  gitSearch = (query: string) => {
+    
+  }
+
 }
