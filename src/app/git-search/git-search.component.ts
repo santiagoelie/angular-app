@@ -8,7 +8,7 @@ import { GitSearch } from '../git-search'
   styleUrls: ['./git-search.component.css']
 })
 export class GitSearchComponent implements OnInit {
-
+  searchResults: GitSearch;
   constructor(private GitSearchService: GitSearchService) { }
 
   ngOnInit(): void {
