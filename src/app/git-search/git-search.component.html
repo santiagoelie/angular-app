@@ -9,7 +9,7 @@
                 </h4>
             </a>
             <p class="description"> {{result.description}} </p>
-            <p> Created On: {{result.created_at}} </p>
+            <p> Created On: {{result.created_at | date:'fullDate'}} </p>
         </li>
     </ul>
 </div>
