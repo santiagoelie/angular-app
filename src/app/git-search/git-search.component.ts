@@ -23,9 +23,9 @@ export class GitSearchComponent implements OnInit {
     })
   }
 
-  gitSearch = (query: string) => {
+  gitSearch = () => {
     // Let's copy the method from the ngOnInit() function, and change 'angular' to query
-    this.GitSearchService.gitSearch(query).then((response) => {
+    this.GitSearchService.gitSearch(this.searchQuery).then( (response) => {
       this.searchResults = response;
     }, (error) => {
       alert("Error: " + error.statusText)
