@@ -1,3 +1,4 @@
+<div *ngIf="searchResults;">
 <h3>Total Results: {{searchResults.total_count}}</h3>
 <ul>
     <li *ngFor="let result of searchResults.items" >
@@ -10,7 +11,7 @@
         <p> {{result.description}} </p>
     </li>
 </ul>
-
+</div>
 
 
 
