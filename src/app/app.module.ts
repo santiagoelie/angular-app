@@ -17,7 +17,10 @@ import { RouterModule, Routes } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(
+      appRoutes
+    )
   ],
   providers: [GitSearchService],
   bootstrap: [AppComponent]
