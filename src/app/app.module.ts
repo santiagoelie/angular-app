@@ -7,6 +7,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { GitSearchService } from './git-search.service';
 import { GitSearchComponent } from './git-search/git-search.component';
 import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: '',
+    component: HomePageComponent
+  },
+  { path: 'search',
+    component: GitSearchComponent,
+    data: {
+      title: 'GitSearch'
+    }
+  },
+  { path: '**', component: NotFoundComponent }
+]
  
 @NgModule({
   declarations: [
