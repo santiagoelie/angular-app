@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GitSearchService } from './git-search.service';
 import { GitSearchComponent } from './git-search/git-search.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const appRoutes: Routes = [
   { path: '',
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    GitSearchComponent
+    GitSearchComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
