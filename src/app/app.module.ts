@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GitSearchService } from './git-search.service';
 import { GitSearchComponent } from './git-search/git-search.component';
+import { RouterModule, Routes } from '@angular/router';
  
 @NgModule({
   declarations: [
