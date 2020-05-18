@@ -12,7 +12,11 @@ export class GitSearchComponent implements OnInit {
   searchResults: GitSearch;
   searchQuery: string;
   title: string;
-  constructor(private GitSearchService: GitSearchService, private route: ActivatedRoute ) { }
+  constructor(
+    private GitSearchService: GitSearchService, 
+    private route: ActivatedRoute,
+    private router: Router 
+    ) { }
 
   ngOnInit(): void {
     // change the 'angular' value to '&&&&&' to check the error
