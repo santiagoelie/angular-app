@@ -23,6 +23,9 @@ export class GitSearchComponent implements OnInit {
     }, (error) => {
       alert("Error: " + error.statusText)
     })
+    this.route.data.subscribe( (result) => {
+      this.title = result.title
+    });
   }
 
   gitSearch = () => {
