@@ -17,7 +17,7 @@ export class GitSearchComponent implements OnInit {
   ngOnInit(): void {
     // change the 'angular' value to '&&&&&' to check the error
     this.GitSearchService.gitSearch('angular').then( (response) => {
-      // console.log(response)
+      console.log(response)
       // alert("Total Libraries Found:" + response.total_count);
       this.searchResults = response;
     }, (error) => {
