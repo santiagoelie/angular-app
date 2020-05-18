@@ -12,6 +12,7 @@ export class GitSearchComponent implements OnInit {
   searchResults: GitSearch;
   searchQuery: string;
   title: string;
+  displayQuery: string;
   constructor(
     private GitSearchService: GitSearchService, 
     private route: ActivatedRoute,
