@@ -21,7 +21,9 @@ export class GitSearchComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe( (params: ParamMap) => {
-      
+      this.searchQuery = params.get('query');
+      this.displayQuery = params.get('query');
+      this.gitSearch();
     })
     // change the 'angular' value to '&&&&&' to check the error
     this.GitSearchService.gitSearch('angular').then( (response) => {
