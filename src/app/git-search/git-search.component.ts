@@ -48,4 +48,9 @@ export class GitSearchComponent implements OnInit {
     })
   }
 
+  sendQuery = () => {
+    this.searchResults = null;
+    this.router.navigate(['/search/' + this.searchQuery])
+  }
+
 }
