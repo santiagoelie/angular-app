@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router'
 export class GitSearchComponent implements OnInit {
   searchResults: GitSearch;
   searchQuery: string;
-  constructor(private GitSearchService: GitSearchService) { }
+  constructor(private GitSearchService: GitSearchService, private route: ActivatedRoute ) { }
 
   ngOnInit(): void {
     // change the 'angular' value to '&&&&&' to check the error
