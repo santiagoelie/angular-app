@@ -25,14 +25,15 @@ export class GitSearchComponent implements OnInit {
       this.displayQuery = params.get('query');
       this.gitSearch();
     })
-    // change the 'angular' value to '&&&&&' to check the error
-    this.GitSearchService.gitSearch('angular').then( (response) => {
-      console.log(response)
-      // alert("Total Libraries Found:" + response.total_count);
-      this.searchResults = response;
-    }, (error) => {
-      alert("Error: " + error.statusText)
-    })
+    // this is old sample code
+    // // change the 'angular' value to '&&&&&' to check the error
+    // this.GitSearchService.gitSearch('angular').then( (response) => {
+    //   console.log(response)
+    //   // alert("Total Libraries Found:" + response.total_count);
+    //   this.searchResults = response;
+    // }, (error) => {
+    //   alert("Error: " + error.statusText)
+    // })
     this.route.data.subscribe( (result) => {
       this.title = result.title
     });
