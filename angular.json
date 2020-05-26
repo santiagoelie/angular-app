@@ -117,8 +117,16 @@
               "devServerTarget": "angular-fundamentals:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "angular-fundamentals"
+    }
+  },
+  "defaultProject": "angular-fundamentals",
+  "cli": {
+    "analytics": "ed3eb073-ab9e-4648-8b9b-81a2eb2a7542"
+  }
 }
