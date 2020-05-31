@@ -103,5 +103,5 @@ export interface GitSearch {
         'default_branch': string,
         'score': number
       }
-    >
+    >;
 }
