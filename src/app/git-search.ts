@@ -1,6 +1,6 @@
 export interface GitSearch {
-    'total_count': number,
-    'incomplete_results': boolean,
+    'total_count': number;
+    'incomplete_results': boolean;
     'items': Array<
       {
         'id': number,
