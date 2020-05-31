@@ -24,8 +24,7 @@ const appRoutes: Routes = [
     data: { title: 'Git Search' }
   },
   { path: '**', component: NotFoundComponent }
-]
- 
+];
 @NgModule({
   declarations: [
     AppComponent,
