@@ -17,7 +17,7 @@ export class GitSearchService {
    }
 
    gitSearch = (query: string): Promise<GitSearch> => {
-      let promise = new Promise<GitSearch>((resolve, reject) => {
+      const promise = new Promise<GitSearch>((resolve, reject) => {
           if (this.cachedValues[query]) {
               resolve(this.cachedValues[query]);
           } else {
