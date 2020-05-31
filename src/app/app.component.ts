@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
       // change the 'angular' value to '&&&&&' to check the error
       this.GitSearchService.gitSearch('angular').then( (response) => {
-        alert("Total Libraries Found:" + response.total_count);
+        alert('Total Libraries Found:' + response.total_count);
       }, (error) => {
         alert("Error: " + error.statusText)
       })
