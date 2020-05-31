@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { GitSearch } from './git-search'
+import { GitSearch } from './git-search';
 import { promise } from 'protractor';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
