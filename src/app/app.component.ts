@@ -17,8 +17,8 @@ export class AppComponent implements OnInit {
       this.GitSearchService.gitSearch('angular').then( (response) => {
         alert('Total Libraries Found:' + response.total_count);
       }, (error) => {
-        alert("Error: " + error.statusText)
-      })
+        alert('Error: ' + error.statusText);
+      });
   }
 
   title = 'app is functional!';
