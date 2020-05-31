@@ -21,5 +21,5 @@ export class AppComponent implements OnInit {
       });
   }
 
-  title = 'app is functional!';
+  // title = 'app is functional!';
 }
