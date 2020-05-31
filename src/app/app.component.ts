@@ -8,6 +8,7 @@ import { GitSearchService } from './git-search.service';
   providers: [GitSearchService]
 })
 export class AppComponent implements OnInit {
+  title: any;
   constructor(private GitSearchService: GitSearchService) {
 
   }
